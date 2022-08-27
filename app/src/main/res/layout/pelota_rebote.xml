@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/pantalla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/texto_botones"
+            style="@style/texto_botones"
+            android:layout_alignLeft="@+id/facil"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/facil"
+            style="@style/boton_Dificultad"
+            android:layout_alignBaseline="@+id/dificil"
+            android:layout_toLeftOf="@+id/medio"
+            android:text="@string/facil" />
+
+        <Button
+            android:id="@+id/medio"
+            style="@style/boton_Dificultad"
+            android:layout_alignBaseline="@+id/dificil"
+            android:layout_toLeftOf="@+id/dificil"
+            android:text="@string/medio" />
+
+        <Button
+            android:id="@+id/dificil"
+            style="@style/boton_Dificultad"
+            android:layout_below="@+id/texto_botones"
+            android:layout_alignParentRight="true"
+            android:text="@string/dificil" />
+
+        <Button
+            android:id="@+id/ayuda"
+            style="@style/boton_ayuda"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="ayuda"></Button>
+
+        <TextView
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="29dp"
+            android:width="70dp"
+            android:height="40dp"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

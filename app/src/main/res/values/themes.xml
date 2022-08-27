@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GamesJhon" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="texto_menu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_menu</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="titulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_titulo</item>
+    </style>
+
+    <style name="boton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/ancho_min_boton</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/alto_min_boton</item>
+        <item name="android:layout_margin">@dimen/margen_boton</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:background">@drawable/bonto_degradado</item>
+    </style>
+
+    <style name="cartas">
+        <item name="android:layout_width">@dimen/carta</item>
+        <item name="android:layout_height">@dimen/carta</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <!-- INICIO ESTILOS DE TRIKI-->
+    <style name="boton_triki">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/ancho_min_boton</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/alto_min_boton</item>
+        <item name="android:layout_margin">@dimen/margen_boton</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:onClick">jugar</item>
+        <item name="android:background">@drawable/bonto_degradado</item>
+    </style>
+
+    <style name="botones_radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/texto_radio</item>
+        <item name="android:alpha">0.7</item>
+    </style>
+
+    <style name="casillas">
+        <item name="android:layout_width">@dimen/casilla</item>
+        <item name="android:layout_height">@dimen/casilla</item>
+        <item name="android:src">@drawable/casilla</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:onClick">toque</item>
+    </style>
+
+    <!--INICIO ESTILOS DE PELOTA REOBOTE-->
+
+    <style name="pantalla">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/paisaje</item>
+
+
+    </style>
+
+    <style name="ajuste_general">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margen</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+
+    <style name="texto_botones" parent="@style/ajuste_general">
+
+        <item name="android:background">@drawable/fondo</item>
+        <item name="android:textSize">@dimen/texto</item>
+        <item name="android:text">@string/dificultad</item>
+
+    </style>
+
+    <style name="botones" parent="@style/ajuste_general">
+
+        <item name="android:minHeight">@dimen/alto_min_boton</item>
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <item name="android:background">@drawable/boton</item>
+
+    </style>
+
+    <style name="boton_Dificultad" parent="@style/botones">
+
+        <item name="android:onClick">dificultad</item>
+    </style>
+
+    <style name="boton_ayuda" parent="@style/botones">
+        <item name="android:text">@string/ayuda</item>
+        <item name="android:onClick">ayuda</item>
+    </style>
+
+</resources>

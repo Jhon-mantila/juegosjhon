@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/fondo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/titulo"
+                android:layout_weight="1"
+                android:text="@string/bienvenido" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="4"
+                android:rowCount="4">
+
+                <ImageButton
+                    android:id="@+id/boton00"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton01"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton02"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton03"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton04"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton05"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton06"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton07"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton08"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton09"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton10"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton11"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton12"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton13"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton14"
+                    style="@style/cartas"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton15"
+                    style="@style/cartas"></ImageButton>
+
+            </GridLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/puntuacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Puntuacion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnReiniciiar"
+                style="@style/boton"
+                android:text="@string/reiniciar" />
+
+            <Button
+                android:id="@+id/botonSalir"
+                style="@style/boton"
+                android:text="@string/salir" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
